@@ -24,15 +24,17 @@ int binary_search(int array[],int n,int num){
 }
 int main(void){
     //array
-    int array[] = {1,2,3,4,5,6,7,8,9,10};
-    int num = 10;
+    int array[] = {1,2,3,4};
+    int num = 0;
+    cout << "Key? ";
+    cin >> num;
     int n = *(&array + 1) - array;
     int result = binary_search(array, n, num);
     if(result == -1) {
         cout << "element is not present";
     }
     else{
-        cout << "element is present at index: " << result;
+        cout << "Found (Step = " << result << ")" << endl;
     }
     return 0;
 }
