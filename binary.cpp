@@ -22,6 +22,7 @@ int binary_search(int array[],int n,int num){
     }
     return -1;
 }
+
 int main(void){
     //array
     int array[] = {1,2,3,4};
